@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #e8f0fe;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 470px;
+    background: white;
+    color: #2c3e50;
+    margin: 20px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.weather-box h2 {
+    color: #3498db;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.search-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.search-box input {
+    border: 2px solid #e8f0fe;
+    outline: 0;
+    background: white;
+    color: #2c3e50;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.search-box input:focus {
+    border-color: #3498db;
+}
+
+.search-box button {
+    border: 0;
+    outline: 0;
+    background: #3498db;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.search-box button:hover {
+    background: #2980b9;
+}
+
+.weather-info {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 15px;
+}
+
+.city-name h2 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.weather-condition {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.weather-condition img {
+    width: 120px;
+    margin-bottom: 15px;
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.2));
+}
+
+.weather-condition p {
+    color: #7f8c8d;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.temperature {
+    color: #3498db;
+    font-size: 48px;
+    font-weight: bold;
+    margin: 20px 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 10px 20px;
+}
+
+.col div {
+    margin-left: 10px;
+}
+
+.humidity, .wind {
+    font-size: 24px;
+    color: #3498db;
+    margin-bottom: 5px;
+}
+
+.col div p:last-child {
+    color: #7f8c8d;
+    font-size: 14px;
+}
